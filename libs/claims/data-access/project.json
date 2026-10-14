@@ -1,0 +1,22 @@
+{
+  "name": "claims-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/claims/data-access/src",
+  "prefix": "vp-claims",
+  "projectType": "library",
+  "tags": [
+    "scope:claims",
+    "type:data-access"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/claims/data-access"
+      }
+    }
+  }
+}

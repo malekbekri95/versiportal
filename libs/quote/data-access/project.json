@@ -1,0 +1,22 @@
+{
+  "name": "quote-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/quote/data-access/src",
+  "prefix": "vp-quote",
+  "projectType": "library",
+  "tags": [
+    "scope:quote",
+    "type:data-access"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/quote/data-access"
+      }
+    }
+  }
+}

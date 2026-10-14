@@ -1,0 +1,22 @@
+{
+  "name": "shared-auth",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/auth/src",
+  "prefix": "vp",
+  "projectType": "library",
+  "tags": [
+    "scope:shared",
+    "type:data-access"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/shared/auth"
+      }
+    }
+  }
+}

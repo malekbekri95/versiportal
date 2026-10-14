@@ -1,0 +1,22 @@
+{
+  "name": "claims-feature-report",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/claims/feature-report/src",
+  "prefix": "vp-claims",
+  "projectType": "library",
+  "tags": [
+    "scope:claims",
+    "type:feature"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/claims/feature-report"
+      }
+    }
+  }
+}

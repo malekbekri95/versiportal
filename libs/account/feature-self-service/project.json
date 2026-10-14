@@ -1,0 +1,22 @@
+{
+  "name": "account-feature-self-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/account/feature-self-service/src",
+  "prefix": "vp-account",
+  "projectType": "library",
+  "tags": [
+    "scope:account",
+    "type:feature"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/account/feature-self-service"
+      }
+    }
+  }
+}

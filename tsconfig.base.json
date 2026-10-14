@@ -1,0 +1,66 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@versiportal/design-system": [
+        "./libs/shared/design-system/src/index.ts"
+      ],
+      "@versiportal/shared/auth": ["./libs/shared/auth/src/index.ts"],
+      "@versiportal/shared/i18n": ["./libs/shared/i18n/src/index.ts"],
+      "@versiportal/quote/feature-wizard": [
+        "./libs/quote/feature-wizard/src/index.ts"
+      ],
+      "@versiportal/quote/data-access": [
+        "./libs/quote/data-access/src/index.ts"
+      ],
+      "@versiportal/quote/ui": ["./libs/quote/ui/src/index.ts"],
+      "@versiportal/claims/feature-report": [
+        "./libs/claims/feature-report/src/index.ts"
+      ],
+      "@versiportal/claims/data-access": [
+        "./libs/claims/data-access/src/index.ts"
+      ],
+      "@versiportal/claims/ui": ["./libs/claims/ui/src/index.ts"],
+      "@versiportal/account/feature-self-service": [
+        "./libs/account/feature-self-service/src/index.ts"
+      ],
+      "@versiportal/account/data-access": [
+        "./libs/account/data-access/src/index.ts"
+      ],
+      "@versiportal/account/ui": ["./libs/account/ui/src/index.ts"],
+      "@versiportal/mfe-contracts": [
+        "./libs/shared/mfe-contracts/src/index.ts"
+      ],
+      "@versiportal/shared/api-models": [
+        "./libs/shared/api-models/src/index.ts"
+      ],
+      "@versiportal/shared/util-iban": ["./libs/shared/util-iban/src/index.ts"],
+      "@versiportal/shared/util-money": [
+        "./libs/shared/util-money/src/index.ts"
+      ],
+      "@versiportal/shared/util-dates": [
+        "./libs/shared/util-dates/src/index.ts"
+      ],
+      "@versiportal/nx-plugin": ["./libs/tools/nx-plugin/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

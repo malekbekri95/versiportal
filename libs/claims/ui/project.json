@@ -1,0 +1,22 @@
+{
+  "name": "claims-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/claims/ui/src",
+  "prefix": "vp-claims",
+  "projectType": "library",
+  "tags": [
+    "scope:claims",
+    "type:ui"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/claims/ui"
+      }
+    }
+  }
+}

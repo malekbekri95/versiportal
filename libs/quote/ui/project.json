@@ -1,0 +1,22 @@
+{
+  "name": "quote-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/quote/ui/src",
+  "prefix": "vp-quote",
+  "projectType": "library",
+  "tags": [
+    "scope:quote",
+    "type:ui"
+  ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "reportsDirectory": "coverage/libs/quote/ui"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+	"account": "http://localhost:4204/remoteEntry.json",
+	"claims": "http://localhost:4202/remoteEntry.json",
+	"quote": "http://localhost:4201/remoteEntry.json"
+}
