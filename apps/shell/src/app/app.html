@@ -1,2 +1,11 @@
-<vp-nx-welcome></vp-nx-welcome>
-<router-outlet></router-outlet>
+<header>
+  <h1>{{ title }}</h1>
+  <nav>
+    <a routerLink="/quote" routerLinkActive="active">Quote</a>
+    <a routerLink="/claims" routerLinkActive="active">Claims</a>
+    <a routerLink="/account" routerLinkActive="active">Account</a>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
